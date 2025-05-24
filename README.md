@@ -31,7 +31,8 @@ Muốn sửa file này bằng cách
 4. Ctrl+ X rồi bỏ ra nhấn Y để lưu
 Lưu ý, file này ở trong thư mục blynk_env, sau cần sửa thì phải vào đúng thư mục này
 
+Kết nối Pi với driver và moto như sau
 
+![CleanShot 2025-05-24 at 16 25 33](https://github.com/user-attachments/assets/1c41d0d2-b13a-4dd8-9d0c-bace03c413f1)
 
-```
-
+Nếu chạy không chuẩn chỉ cần sửa file BlynkCar.py, phần logic điều khiển động cơ khi nhận tọa độ joystick x,y qua v1 và v2
