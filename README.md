@@ -10,7 +10,7 @@ Các bước kết nối Pi với điện thoại để điều khiển.
 
 1. Dùng màn hình và đăng nhập username: trangnguyen, mật khẩu = 1431989
 2. Chuyển sang quyển root (admin): su -
-password: 1431989
+ nhập password: 1431989
 3. Bật 4g trên điện thoại và bật hostpot
 4. Trên Pi gõ như sau để hiển thị wifi kết nối: nmcli device wifi list
 5. Sau khi thấy tên wifi hotspot thì kết nối bằng lệnh : nmcli device wifi connect "Tên_WIFI" password "Mật_khẩu_WIFI"
@@ -23,8 +23,10 @@ Kết nối thành công trên điện thoại sẽ báo icon hình xanh xanh
 
 File BlynkCar này là file kết nối đến Blynk nhận tín hiệu từ app trên điện thoại về v0, v1, v2 và dự vào đó để điểu khiển động cơ car thông qua driver bts7960
 
-Muốn sửa file này bằng cách
+Muốn sửa file này bằng cách. Trước tiên cả 2 laptop và pi cùng mạng và lấy dc IP của PI theo bước 6 bên trên
 
+1.  Mở putty trên máy tính nhập IP và đăng nhập trangnguyen và chuyển qua root như bước 1,2
+2.  chạy: source blynk_env/bin/activate && cd blynk_env
 1.  xóa file này đi: rm BlynkCar.py
 2.  tạo mới file này: nano BlynkCar.py
 3. Paste nội dung mới đã sửa
